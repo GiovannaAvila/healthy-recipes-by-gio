@@ -18,11 +18,13 @@ if (menuToggle && navLinks) {
 if (signupForm && formNote) {
   signupForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    const email = new FormData(signupForm).get('email');
+    const formData = new FormData(signupForm);
+    const name = formData.get('name');
+    const email = formData.get('email');
 
-    if (!email) return;
+    if (!name || !email) return;
 
-    formNote.textContent = 'Obrigada! Seu email foi registrado visualmente. Em breve vamos conectar esse formulário a uma lista real.';
+    formNote.textContent = `Obrigada, ${name}! Seu nome e email foram registrados visualmente. Em breve vamos conectar esse formulário a uma lista real.`;
     signupForm.reset();
   });
 }
