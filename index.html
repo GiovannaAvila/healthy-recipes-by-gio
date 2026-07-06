@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Recipes by Gio</title>
+  <meta name="description" content="Receitas saudáveis, práticas e gostosas por Gio. Entre para a comunidade e marque a Gio quando fizer uma receita." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a class="brand" href="index.html" aria-label="Healthy Recipes by Gio">
+        <span class="brand-icon">G</span>
+        <span>Healthy Recipes by Gio</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <div class="nav-links" data-nav-links>
+        <a href="#receitas">Receitas</a>
+        <a href="#comunidade">Comunidade</a>
+        <a href="#redes">Redes sociais</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Receitas saudáveis • simples • gostosas</p>
+          <h1>Comida leve, bonita e possível para o dia a dia.</h1>
+          <p class="hero-text">Um cantinho para encontrar receitas práticas, equilibradas e cheias de sabor. Salve suas favoritas, prepare em casa e marque a Gio nas redes.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#receitas">Ver receitas</a>
+            <a class="btn secondary" href="#comunidade">Entrar na comunidade</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <span class="badge">Novo</span>
+          <h2>Fez uma receita?</h2>
+          <p>Poste nos stories ou no feed e marque <strong>@healthyrecipesbygio</strong> para compartilhar com a comunidade.</p>
+          <div class="food-icons" aria-hidden="true">
+            <span>🥑</span><span>🍓</span><span>🥗</span><span>🍯</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container section intro-section">
+      <div class="intro-card">
+        <p class="eyebrow">Por onde começar</p>
+        <h2>Receitas para uma rotina saudável sem complicar.</h2>
+        <p>A ideia aqui é reunir receitas que cabem na vida real: ingredientes acessíveis, preparo simples e resultado bonito para comer bem todos os dias.</p>
+      </div>
+    </section>
+
+    <section id="receitas" class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Receitas</p>
+        <h2>Receitas em destaque</h2>
+        <p>Essas páginas já estão prontas para receber fotos, ingredientes reais e modo de preparo completo.</p>
+      </div>
+
+      <div class="recipe-grid">
+        <article class="recipe-card">
+          <a class="recipe-image gradient-1" href="recipes/panqueca-de-banana.html" aria-label="Abrir receita Panqueca de Banana">
+            <span>🍌</span>
+          </a>
+          <div class="recipe-content">
+            <p class="tag">Café da manhã</p>
+            <h3><a href="recipes/panqueca-de-banana.html">Panqueca de banana</a></h3>
+            <p>Rápida, nutritiva e perfeita para começar o dia.</p>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <a class="recipe-image gradient-2" href="recipes/bowl-colorido.html" aria-label="Abrir receita Bowl Colorido">
+            <span>🥗</span>
+          </a>
+          <div class="recipe-content">
+            <p class="tag">Almoço leve</p>
+            <h3><a href="recipes/bowl-colorido.html">Bowl colorido</a></h3>
+            <p>Uma refeição completa com proteína, fibras e muito sabor.</p>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <a class="recipe-image gradient-3" href="recipes/doce-fit.html" aria-label="Abrir receita Doce Fit">
+            <span>🍫</span>
+          </a>
+          <div class="recipe-content">
+            <p class="tag">Sobremesa</p>
+            <h3><a href="recipes/doce-fit.html">Doce fit</a></h3>
+            <p>Para matar a vontade de doce de um jeito equilibrado.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="comunidade" class="community section">
+      <div class="container community-grid">
+        <div>
+          <p class="eyebrow">Comunidade</p>
+          <h2>Receba novidades da Gio</h2>
+          <p>Deixe seu email para receber receitas novas, ideias de cardápio e conteúdos especiais quando a comunidade estiver aberta.</p>
+        </div>
+
+        <form class="signup-form" data-signup-form>
+          <label for="email">Seu melhor email</label>
+          <div class="form-row">
+            <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" required />
+            <button class="btn primary" type="submit">Quero entrar</button>
+          </div>
+          <p class="form-note" data-form-note>Cadastro visual pronto. Depois conectamos com Mailchimp, ConvertKit, Formspree ou Google Forms.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="redes" class="container section socials-section">
+      <div class="section-heading">
+        <p class="eyebrow">Redes sociais</p>
+        <h2>Siga a Gio</h2>
+        <p>Quando fizer uma receita, marque <strong>@healthyrecipesbygio</strong>.</p>
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><span>Instagram</span><strong>◎</strong></a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener"><span>TikTok</span><strong>♪</strong></a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener"><span>YouTube</span><strong>▶</strong></a>
+        <a href="mailto:hello@example.com"><span>Email</span><strong>@</strong></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>© <span data-year></span> Healthy Recipes by Gio. Todos os direitos reservados.</p>
+      <a href="#receitas">Ver receitas</a>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
