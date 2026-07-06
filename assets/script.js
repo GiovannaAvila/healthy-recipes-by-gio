@@ -14,27 +14,12 @@ if (menuToggle && navLinks) {
 }
 
 const brevoForm = document.getElementById('sib-form');
-const nameInput = document.getElementById('NOME');
-
-if (nameInput) {
-  nameInput.style.width = '100%';
-  nameInput.style.minHeight = '48px';
-  nameInput.style.border = '1px solid rgba(79, 125, 90, 0.22)';
-  nameInput.style.borderRadius = '999px';
-  nameInput.style.padding = '0 17px';
-  nameInput.style.font = 'inherit';
-  nameInput.style.outline = 'none';
-  nameInput.style.marginBottom = '18px';
-  nameInput.style.display = 'block';
-}
 
 if (brevoForm) {
-  const hiddenFrame = document.createElement('iframe');
-  hiddenFrame.name = 'brevo-submit-frame';
-  hiddenFrame.style.display = 'none';
-  document.body.appendChild(hiddenFrame);
-
-  brevoForm.setAttribute('target', 'brevo-submit-frame');
+  const endpointA = 'https://4e05528e.sibforms.com/serve/';
+  const endpointB = 'MUIFACmkabIE1FWgoQQLH3p8jfthYd1BMXnOubK0Oz_ZdlBEXWqfcEosgFXDEucwp4urzvv7zugQoghZgKBADEuWbiiBpFISmOShMrpK_6wOWiDlh8JKhB76GQf3iGcyf48cH2K5wSFTEzoXtbBesXfZKBhpnAXsKNpzm0Knp_y8auD-4IbuxuPAQmTU7CbbsHEc4IRnWA8egPghKA==';
+  brevoForm.action = endpointA + endpointB;
+  brevoForm.target = 'brevo-submit-frame';
 
   brevoForm.addEventListener('submit', () => {
     setTimeout(() => {
