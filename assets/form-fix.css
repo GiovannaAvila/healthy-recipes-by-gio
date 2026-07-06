@@ -1,0 +1,35 @@
+.signup-form > input,
+.signup-form > #sib-form > input:not([type="hidden"]):not([name="email_address_check"]) {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid rgba(79, 125, 90, 0.22);
+  border-radius: 999px;
+  padding: 0 17px;
+  font: inherit;
+  outline: none;
+  margin-bottom: 18px;
+}
+
+.signup-form > input:focus,
+.signup-form > #sib-form > input:not([type="hidden"]):not([name="email_address_check"]):focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 4px rgba(79, 125, 90, 0.14);
+}
+
+.signup-form .form-row {
+  align-items: stretch;
+}
+
+.signup-form .form-row input {
+  flex: 1;
+}
+
+@media (max-width: 640px) {
+  .signup-form .form-row {
+    flex-direction: column;
+  }
+
+  .signup-form .form-row button {
+    width: 100%;
+  }
+}
