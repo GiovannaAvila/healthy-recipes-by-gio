@@ -44,6 +44,141 @@
   background: rgba(255, 255, 255, 0.88);
 }
 
+.best-sellers {
+  padding: 44px 0 22px;
+  background: linear-gradient(180deg, rgba(255, 248, 238, 0.96), rgba(255, 255, 255, 0.4));
+}
+
+.best-sellers-heading {
+  margin-bottom: 22px;
+  max-width: 760px;
+}
+
+.best-sellers-heading h2 {
+  font-size: clamp(2.1rem, 4vw, 4.4rem);
+}
+
+.best-sellers-heading p:last-child {
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin: 14px 0 0;
+}
+
+.best-sellers-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr 0.9fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.best-seller-card {
+  position: relative;
+  min-height: 300px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(79, 125, 90, 0.13);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--green-dark);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.best-seller-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 80px rgba(41, 79, 55, 0.18);
+}
+
+.best-seller-card.large {
+  min-height: 360px;
+  color: var(--white);
+  background: var(--green-dark);
+}
+
+.best-seller-card.large img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.best-seller-card.large::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(41, 79, 55, 0.12), rgba(41, 79, 55, 0.86));
+  z-index: 1;
+}
+
+.best-seller-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+.best-badge {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: var(--pink);
+  color: #8b513e;
+  font-weight: 900;
+  font-size: 0.78rem;
+}
+
+.best-seller-card.large .best-badge {
+  background: rgba(255, 248, 238, 0.92);
+  color: var(--green-dark);
+}
+
+.best-seller-card p {
+  margin: 0 0 8px;
+  color: var(--orange);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+}
+
+.best-seller-card.large p {
+  color: var(--cream);
+}
+
+.best-seller-card h3 {
+  margin: 0;
+  font-size: clamp(1.55rem, 2.4vw, 2.4rem);
+  color: inherit;
+}
+
+.best-seller-card span:last-child {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.best-seller-card.large span:last-child {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.best-seller-emoji {
+  width: 86px;
+  height: 86px;
+  display: grid;
+  place-items: center;
+  border-radius: 28px;
+  background: var(--green-soft);
+  font-size: 48px;
+  margin: 26px 0;
+}
+
 .signup-form > input:not([type="hidden"]):not([name="email_address_check"]) {
   width: 100%;
   min-height: 48px;
@@ -69,7 +204,22 @@
   flex: 1;
 }
 
+@media (max-width: 860px) {
+  .best-sellers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .best-seller-card,
+  .best-seller-card.large {
+    min-height: 280px;
+  }
+}
+
 @media (max-width: 640px) {
+  .best-sellers {
+    padding-top: 30px;
+  }
+
   .signup-form .form-row {
     flex-direction: column;
   }
