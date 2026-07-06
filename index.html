@@ -121,9 +121,9 @@
           <p>Deixe seu nome e email para receber receitas novas, ideias de cardápio e conteúdos especiais quando a comunidade estiver aberta.</p>
         </div>
 
-        <form class="signup-form" id="sib-form" method="POST" action="https://4e05528e.sibforms.com/serve/MUIFACmkabIE1FWgoQQLH3p8jfthYd1BMXnOubK0Oz_ZdlBEXWqfcEosgFXDEucwp4urzvv7zugQoghZgKBADEuWbiiBpFISmOShMrpK_6wOWiDlh8JKhB76GQf3iGcyf48cH2K5wSFTEzoXtbBesXfZKBhpnAXsKNpzm0Knp_y8auD-4IbuxuPAQmTU7CbbsHEc4IRnWA8egPghKA==">
+        <form class="signup-form" id="sib-form" method="POST" action="" target="brevo-submit-frame">
           <label for="NOME">Nome</label>
-          <input id="NOME" name="NOME" type="text" placeholder="Seu nome" required />
+          <input id="NOME" name="NOME" type="text" placeholder="Seu nome" required style="width:100%; min-height:48px; border:1px solid rgba(79,125,90,0.22); border-radius:999px; padding:0 17px; font:inherit; outline:none; margin-bottom:18px; display:block;" />
 
           <label for="EMAIL">Email</label>
           <div class="form-row">
@@ -135,6 +135,7 @@
           <input type="hidden" name="locale" value="pt">
           <p class="form-note">Ao se cadastrar, você entra na comunidade da Gio para receber receitas, novidades e conteúdos especiais.</p>
         </form>
+        <iframe name="brevo-submit-frame" style="display:none; width:0; height:0; border:0;"></iframe>
       </div>
     </section>
 
@@ -160,6 +161,6 @@
     </div>
   </footer>
 
-  <script src="assets/script.js"></script>
+  <script src="assets/script.js?v=4"></script>
 </body>
 </html>
