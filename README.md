@@ -8,6 +8,7 @@ Site estático para reunir receitas saudáveis, links de redes sociais e formul�
 - `assets/styles.css` — estilos visuais
 - `assets/script.js` — menu mobile e interação do formulário
 - `recipes/` — páginas individuais das receitas
+- `assets/images/` — imagens das receitas
 
 ## Próximos ajustes
 
