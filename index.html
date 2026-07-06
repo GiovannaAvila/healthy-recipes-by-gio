@@ -21,8 +21,11 @@
       <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
       <div class="nav-links" data-nav-links>
         <a href="#receitas">Receitas</a>
+        <a href="recipes/breakfast/">Breakfast</a>
+        <a href="recipes/lunch-dinner/">Lunch & Dinner</a>
+        <a href="recipes/desserts/">Desserts</a>
+        <a href="recipes/snacks/">Snacks</a>
         <a href="#comunidade">Comunidade</a>
-        <a href="#redes">Redes sociais</a>
       </div>
     </nav>
   </header>
@@ -35,7 +38,7 @@
           <h1>Comida leve, bonita e possível para o dia a dia.</h1>
           <p class="hero-text">Um cantinho para encontrar receitas práticas, equilibradas e cheias de sabor. Salve suas favoritas, prepare em casa e marque a Gio nas redes.</p>
           <div class="hero-actions">
-            <a class="btn primary" href="#receitas">Ver receitas</a>
+            <a class="btn primary" href="#receitas">Ver categorias</a>
             <a class="btn secondary" href="#comunidade">Entrar na comunidade</a>
           </div>
         </div>
@@ -54,71 +57,60 @@
     <section class="container section intro-section">
       <div class="intro-card">
         <p class="eyebrow">Por onde começar</p>
-        <h2>Receitas para uma rotina saudável sem complicar.</h2>
-        <p>A ideia aqui é reunir receitas que cabem na vida real: ingredientes acessíveis, preparo simples e resultado bonito para comer bem todos os dias.</p>
+        <h2>Escolha uma categoria e veja todas as receitas daquele segmento.</h2>
+        <p>A página inicial mostra uma receita principal de cada categoria. As listas completas ficam separadas em Breakfast, Lunch & Dinner, Desserts e Snacks.</p>
       </div>
     </section>
 
     <section id="receitas" class="container section">
       <div class="section-heading">
         <p class="eyebrow">Receitas</p>
-        <h2>Receitas em destaque</h2>
-        <p>As receitas ficam organizadas em: Breakfast, Lunch & Dinner, Desserts e Snacks.</p>
+        <h2>Categorias principais</h2>
+        <p>Cada card leva para uma página própria com todas as receitas daquele tipo.</p>
       </div>
 
       <div class="recipe-grid">
         <article class="recipe-card">
-          <a class="recipe-image photo" href="recipes/desserts/cinnamon-roll-light.html" aria-label="Abrir receita Cinnamon Roll Light">
-            <img src="assets/images/20f36d6d-7be2-4400-ae4f-c9be3bf860c5.jpeg" alt="Cinnamon Roll Light com cobertura cremosa" />
-          </a>
-          <div class="recipe-content">
-            <p class="tag">Desserts</p>
-            <h3><a href="recipes/desserts/cinnamon-roll-light.html">Cinnamon Roll Light</a></h3>
-            <p>Versão mais leve com cottage, iogurte natural e cream cheese light.</p>
-          </div>
-        </article>
-
-        <article class="recipe-card">
-          <a class="recipe-image gradient-2" href="recipes/lunch-dinner/pizza-proteica-de-cottage.html" aria-label="Abrir receita Pizza Proteica de Cottage">
-            <span>🍕</span>
-          </a>
-          <div class="recipe-content">
-            <p class="tag">Lunch & Dinner</p>
-            <h3><a href="recipes/lunch-dinner/pizza-proteica-de-cottage.html">Pizza Proteica de Cottage</a></h3>
-            <p>Pizza média com massa de cottage, iogurte grego, pesto e queijos.</p>
-          </div>
-        </article>
-
-        <article class="recipe-card">
-          <a class="recipe-image gradient-1" href="recipes/breakfast/panqueca-de-banana.html" aria-label="Abrir receita Panqueca de Banana">
+          <a class="recipe-image gradient-1" href="recipes/breakfast/" aria-label="Abrir categoria Breakfast">
             <span>🍌</span>
           </a>
           <div class="recipe-content">
             <p class="tag">Breakfast</p>
-            <h3><a href="recipes/breakfast/panqueca-de-banana.html">Panqueca de banana</a></h3>
-            <p>Rápida, nutritiva e perfeita para começar o dia.</p>
+            <h3><a href="recipes/breakfast/">Breakfast</a></h3>
+            <p>Receita principal: Panqueca de banana.</p>
           </div>
         </article>
 
         <article class="recipe-card">
-          <a class="recipe-image gradient-2" href="recipes/lunch-dinner/bowl-colorido.html" aria-label="Abrir receita Bowl Colorido">
-            <span>🥗</span>
+          <a class="recipe-image gradient-2" href="recipes/lunch-dinner/" aria-label="Abrir categoria Lunch and Dinner">
+            <span>🍕</span>
           </a>
           <div class="recipe-content">
             <p class="tag">Lunch & Dinner</p>
-            <h3><a href="recipes/lunch-dinner/bowl-colorido.html">Bowl colorido</a></h3>
-            <p>Uma refeição completa com proteína, fibras e muito sabor.</p>
+            <h3><a href="recipes/lunch-dinner/">Lunch & Dinner</a></h3>
+            <p>Receita principal: Pizza Proteica de Cottage.</p>
           </div>
         </article>
 
         <article class="recipe-card">
-          <a class="recipe-image gradient-3" href="recipes/desserts/doce-fit.html" aria-label="Abrir receita Doce Fit">
-            <span>🍫</span>
+          <a class="recipe-image photo" href="recipes/desserts/" aria-label="Abrir categoria Desserts">
+            <img src="assets/images/20f36d6d-7be2-4400-ae4f-c9be3bf860c5.jpeg" alt="Cinnamon Roll Light com cobertura cremosa" />
           </a>
           <div class="recipe-content">
             <p class="tag">Desserts</p>
-            <h3><a href="recipes/desserts/doce-fit.html">Doce fit</a></h3>
-            <p>Para matar a vontade de doce de um jeito equilibrado.</p>
+            <h3><a href="recipes/desserts/">Desserts</a></h3>
+            <p>Receita principal: Cinnamon Roll Light.</p>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <a class="recipe-image gradient-1" href="recipes/snacks/" aria-label="Abrir categoria Snacks">
+            <span>🥜</span>
+          </a>
+          <div class="recipe-content">
+            <p class="tag">Snacks</p>
+            <h3><a href="recipes/snacks/">Snacks</a></h3>
+            <p>Em breve: lanches práticos e saudáveis.</p>
           </div>
         </article>
       </div>
@@ -161,7 +153,7 @@
   <footer class="footer">
     <div class="container footer-grid">
       <p>© <span data-year></span> Healthy Recipes by Gio. Todos os direitos reservados.</p>
-      <a href="#receitas">Ver receitas</a>
+      <a href="#receitas">Ver categorias</a>
     </div>
   </footer>
 
